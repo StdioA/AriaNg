@@ -71,10 +71,9 @@
         },
         'max-connection-per-server': {
             type: 'integer',
-            defaultValue: '1',
+            defaultValue: '256',
             required: true,
-            min: 1,
-            max: 16
+            min: 1
         },
         'max-file-not-found': {
             type: 'integer',
@@ -91,7 +90,7 @@
         'min-split-size': {
             type: 'string',
             suffix: 'Bytes',
-            defaultValue: '20M',
+            defaultValue: '1M',
             required: true,
             pattern: '^(0|[1-9]\\d*(K|k|M|m)?)$'
         },
